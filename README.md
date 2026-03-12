@@ -11,7 +11,7 @@
 
 ## 使い方
 
-1. ブラウザで `index.html` を開く、または GitHub Pages の URL にアクセス
+1. ブラウザで `index.html` を開く、または [GitHub Pages](https://ktktisi23businessyo-dotcom.github.io/time-cost/) にアクセス
 2. 固定費を登録（カテゴリ、月額金額など）
 3. 時間コストが自動で表示される
 4. PWA としてインストールすると、アプリのように起動できる

@@ -105,9 +105,10 @@ function resetForm() {
  * @param {Object} item - 編集する固定費
  */
 function setEditMode(item) {
-  document.getElementById('category').value = item.category;
-  document.getElementById('name').value = item.name || '';
-  document.getElementById('amount').value = item.amount;
+    document.getElementById('category').value = item.category;
+    document.getElementById('name').value = item.name || '';
+    document.getElementById('amount').value = item.amount;
+    document.getElementById('amount-unit').value = 'monthly';
   document.getElementById('memo').value = item.memo || '';
   document.getElementById('edit-id').value = item.id;
   document.getElementById('submit-btn').textContent = '保存';

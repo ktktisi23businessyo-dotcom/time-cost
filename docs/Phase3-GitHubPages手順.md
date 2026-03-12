@@ -13,21 +13,25 @@
 
 ## 2. リモートの追加とプッシュ
 
+**重要**: 先に GitHub でリポジトリを作成してから実行すること。
+
 ```bash
 cd "/Users/katsukitaisei/Desktop/AIエンジニア/1日のお金　PWA化"
 
-# リモート追加（<USERNAME> を GitHub ユーザー名に、<REPO> をリポジトリ名に置き換え）
-git remote add origin https://github.com/<USERNAME>/<REPO>.git
+# リモート追加（USERNAME と REPO を実際の値に置き換える。角括弧 <> は削除する）
+git remote add origin https://github.com/USERNAME/REPO.git
 
 # プッシュ
 git push -u origin main
 ```
 
-**例**: ユーザー名が `katsukitaisei`、リポジトリ名が `ichinichi-okane` の場合：
+**例**: ユーザー名が `ktktisi23businessyo-dotcom`、リポジトリ名が `time-cost` の場合：
 ```bash
-git remote add origin https://github.com/katsukitaisei/ichinichi-okane.git
+git remote add origin https://github.com/ktktisi23businessyo-dotcom/time-cost.git
 git push -u origin main
 ```
+
+**注意**: `<USERNAME>` のように角括弧付きでコマンドを実行すると、zsh がエラーになる。角括弧は使わず、実際の文字列だけを入力する。
 
 ## 3. GitHub Pages の有効化
 
@@ -45,7 +49,7 @@ git push -u origin main
 https://<USERNAME>.github.io/<REPO>/
 ```
 
-例: `https://katsukitaisei.github.io/ichinichi-okane/`
+例: `https://ktktisi23businessyo-dotcom.github.io/time-cost/`
 
 ## 5. 確認事項
 

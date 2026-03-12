@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const amountNum = parseInt(amount, 10);
     if (isNaN(amountNum) || amountNum < 0) {
-      showError('月額金額を正しく入力してください（0以上の整数）');
+      showError('金額を正しく入力してください（0以上の整数）');
       return false;
     }
 
@@ -62,8 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const editId = document.getElementById('edit-id').value;
     const category = document.getElementById('category').value;
     const name = document.getElementById('name').value.trim();
-    const amount = parseInt(document.getElementById('amount').value, 10);
+    let amount = parseInt(document.getElementById('amount').value, 10);
+    const amountUnit = document.getElementById('amount-unit').value;
     const memo = document.getElementById('memo').value.trim();
+
+    if (amountUnit === 'yearly') {
+      amount = Math.round(amount / 12);
+    }
 
     if (editId) {
       const index = items.findIndex((i) => i.id === editId);

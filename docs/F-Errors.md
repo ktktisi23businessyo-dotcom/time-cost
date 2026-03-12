@@ -24,6 +24,7 @@
 | No | 日付 | Phase | 作業内容 | エラー内容 | 原因 | 対応 | 状態 |
 |----|------|-------|----------|------------|------|------|------|
 | 1 | - | 1 | 削除確認モーダル | 「削除する」「キャンセル」ボタンが選択できない | モーダル構造・pointer-events の影響 | モーダルを body 直下に移動、backdrop と content を分離、aria-hidden で表示制御、z-index 調整 | 解決 |
+| 2 | - | 3 | GitHub プッシュ | `zsh: no such file or directory: USERNAME`、`remote: Repository not found` | ① `<USERNAME>` をそのまま実行（プレースホルダのまま）② GitHub にリポジトリが未作成 | ① 実際の値に置き換えて実行 ② GitHub でリポジトリを先に作成 | 解決 |
 
 ---
 
